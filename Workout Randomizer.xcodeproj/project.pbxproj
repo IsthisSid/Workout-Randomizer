@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FFD82E26252F61FB0034012E /* Workout_RandomizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E25252F61FB0034012E /* Workout_RandomizerApp.swift */; };
-		FFD82E28252F61FB0034012E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E27252F61FB0034012E /* ContentView.swift */; };
 		FFD82E2A252F61FF0034012E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD82E29252F61FF0034012E /* Assets.xcassets */; };
 		FFD82E2D252F61FF0034012E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD82E2C252F61FF0034012E /* Preview Assets.xcassets */; };
+		FFD82E36252F63000034012E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD82E35252F63000034012E /* Main.storyboard */; };
+		FFD82E3B252F6AFD0034012E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E3A252F6AFD0034012E /* ViewController.swift */; };
+		FFD82E3E252F6B340034012E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E3D252F6B340034012E /* AppDelegate.swift */; };
+		FFD82E41252F6B470034012E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E40252F6B470034012E /* SceneDelegate.swift */; };
+		FFD82E47252F75730034012E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD82E46252F75730034012E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFD82E22252F61FB0034012E /* Workout Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Randomizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFD82E25252F61FB0034012E /* Workout_RandomizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_RandomizerApp.swift; sourceTree = "<group>"; };
-		FFD82E27252F61FB0034012E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFD82E29252F61FF0034012E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFD82E2C252F61FF0034012E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFD82E2E252F61FF0034012E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD82E35252F63000034012E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FFD82E3A252F6AFD0034012E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFD82E3D252F6B340034012E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFD82E40252F6B470034012E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFD82E46252F75730034012E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,11 @@
 		FFD82E24252F61FB0034012E /* Workout Randomizer */ = {
 			isa = PBXGroup;
 			children = (
-				FFD82E25252F61FB0034012E /* Workout_RandomizerApp.swift */,
-				FFD82E27252F61FB0034012E /* ContentView.swift */,
+				FFD82E3D252F6B340034012E /* AppDelegate.swift */,
+				FFD82E40252F6B470034012E /* SceneDelegate.swift */,
+				FFD82E3A252F6AFD0034012E /* ViewController.swift */,
+				FFD82E35252F63000034012E /* Main.storyboard */,
+				FFD82E46252F75730034012E /* LaunchScreen.storyboard */,
 				FFD82E29252F61FF0034012E /* Assets.xcassets */,
 				FFD82E2E252F61FF0034012E /* Info.plist */,
 				FFD82E2B252F61FF0034012E /* Preview Content */,
@@ -100,6 +109,7 @@
 				TargetAttributes = {
 					FFD82E21252F61FB0034012E = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -126,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD82E36252F63000034012E /* Main.storyboard in Resources */,
+				FFD82E47252F75730034012E /* LaunchScreen.storyboard in Resources */,
 				FFD82E2D252F61FF0034012E /* Preview Assets.xcassets in Resources */,
 				FFD82E2A252F61FF0034012E /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFD82E28252F61FB0034012E /* ContentView.swift in Sources */,
-				FFD82E26252F61FB0034012E /* Workout_RandomizerApp.swift in Sources */,
+				FFD82E3E252F6B340034012E /* AppDelegate.swift in Sources */,
+				FFD82E3B252F6AFD0034012E /* ViewController.swift in Sources */,
+				FFD82E41252F6B470034012E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Workout Randomizer/Preview Content\"";
 				DEVELOPMENT_TEAM = D2H83P2DRT;
@@ -279,6 +293,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.isthissid.Workout-Randomizer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Workout Randomizer/Preview Content\"";
 				DEVELOPMENT_TEAM = D2H83P2DRT;
