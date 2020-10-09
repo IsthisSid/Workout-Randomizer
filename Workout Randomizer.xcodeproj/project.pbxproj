@@ -14,6 +14,8 @@
 		FFD82E3E252F6B340034012E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E3D252F6B340034012E /* AppDelegate.swift */; };
 		FFD82E41252F6B470034012E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E40252F6B470034012E /* SceneDelegate.swift */; };
 		FFD82E47252F75730034012E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD82E46252F75730034012E /* LaunchScreen.storyboard */; };
+		FFD82E6F2530AC790034012E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD82E6E2530AC790034012E /* SecondViewController.swift */; };
+		FFD82E732530C9B00034012E /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFD82E722530C9B00034012E /* airhorn.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FFD82E3D252F6B340034012E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD82E40252F6B470034012E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FFD82E46252F75730034012E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFD82E6E2530AC790034012E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FFD82E722530C9B00034012E /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +65,12 @@
 				FFD82E3D252F6B340034012E /* AppDelegate.swift */,
 				FFD82E40252F6B470034012E /* SceneDelegate.swift */,
 				FFD82E3A252F6AFD0034012E /* ViewController.swift */,
+				FFD82E6E2530AC790034012E /* SecondViewController.swift */,
 				FFD82E35252F63000034012E /* Main.storyboard */,
 				FFD82E46252F75730034012E /* LaunchScreen.storyboard */,
 				FFD82E29252F61FF0034012E /* Assets.xcassets */,
 				FFD82E2E252F61FF0034012E /* Info.plist */,
+				FFD82E722530C9B00034012E /* airhorn.mp3 */,
 				FFD82E2B252F61FF0034012E /* Preview Content */,
 			);
 			path = "Workout Randomizer";
@@ -136,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD82E732530C9B00034012E /* airhorn.mp3 in Resources */,
 				FFD82E36252F63000034012E /* Main.storyboard in Resources */,
 				FFD82E47252F75730034012E /* LaunchScreen.storyboard in Resources */,
 				FFD82E2D252F61FF0034012E /* Preview Assets.xcassets in Resources */,
@@ -150,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD82E6F2530AC790034012E /* SecondViewController.swift in Sources */,
 				FFD82E3E252F6B340034012E /* AppDelegate.swift in Sources */,
 				FFD82E3B252F6AFD0034012E /* ViewController.swift in Sources */,
 				FFD82E41252F6B470034012E /* SceneDelegate.swift in Sources */,

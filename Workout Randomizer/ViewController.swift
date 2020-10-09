@@ -8,23 +8,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-     
-
-    @IBOutlet weak var timeImageView: UIImageView!
-    @IBOutlet weak var workoutImageView: UIImageView!
     
-    @IBAction func timeButtonPressed(_ sender: UIButton) {
-        let timeArray = [#imageLiteral(resourceName: "fiveMinButton"),#imageLiteral(resourceName: "tenMinButton"),#imageLiteral(resourceName: "fifteenMinButton"),#imageLiteral(resourceName: "twentyMinButton")]
+    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var textView: UITextView!
+    
+    @IBOutlet weak var pumpTextLabel: UILabel!
+    
+    @IBAction func submitPressed(_ sender: UIButton) {
+        //gets the text from the textField the user inputs
         
-        timeImageView.image = timeArray[Int.random(in: 0...3)]
-
+        let myText = textField.text
+        //update previous text of textview
+        textView.text = myText
     }
     
-    @IBAction func workoutButtonPressed(_ sender: UIButton) {
+    //typing animation
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        let workoutArray = [#imageLiteral(resourceName: "weightsButton"),#imageLiteral(resourceName: "squatsButton"),#imageLiteral(resourceName: "jogButton"),#imageLiteral(resourceName: "plankButton")]
-        
-        workoutImageView.image = workoutArray[Int.random(in: 0...3)]
+        pumpTextLabel.text = "" //this empty string empties our label
+        var charIndex = 0.0 //note this is a double
+        let pumpText = "🏋🏻‍♀️Pump it up!"
+        for letter in pumpText {
+            print("-")
+            print(0.1 * charIndex)
+            print(letter)
+            //adding each letter after an incremental amount of time, repeating can be false or true
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in self.pumpTextLabel.text?.append(letter)
+            }
+            //error-use ? because the pumpTextLabel needs to be clearly marked as self, note that we are in a closure
+            
+            charIndex += 1
+            // in order not to have the letters to start at the same time, we need a delay for every subsequent letter, so inside this for-loop, we +=1
+            //0.3 * charIndex = delay of 0.3 seconds, 0.4 * charIndex = delay of 0.4 seconds, etc
+            
+        }
     }
 }
-    
